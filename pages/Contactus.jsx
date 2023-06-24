@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Component/Header';
 import { useRouter } from 'next/router';
-import Navbar from './Component/Navbar';
+import Navbar from './Navbar';
 import Footer from './Component/Footer';
 
 const headersDictionary = {

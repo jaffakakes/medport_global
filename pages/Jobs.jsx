@@ -1,4 +1,4 @@
-import Navbar from "./Component/Navbar";
+import Navbar from "./Navbar";
 import Header from './Component/Header';
 import { useRouter } from "next/router";
 import JobsBoard from "./Component/JobBoard";
