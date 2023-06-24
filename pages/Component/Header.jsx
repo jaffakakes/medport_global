@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MyComponent = ({ headerText }) => {
+const Header = ({ headerText }) => {
     const isBrowser = typeof window !== "undefined";
     const isMobile = isBrowser && window.innerWidth <= 768;
     
@@ -24,4 +24,4 @@ const MyComponent = ({ headerText }) => {
     );
   };
 
-export default MyComponent;
+export default Header;
