@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Navbar() {
+ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
   
@@ -76,3 +76,4 @@ export default function Navbar() {
     </nav>
   );
 }
+export default Navbar;
