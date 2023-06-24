@@ -28,7 +28,7 @@ export default function Navbar() {
                  <Link href="/ServicePage?service=justice-prisons" className="block px-4 py-2">Justice and Prisons</Link>
                  <Link href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</Link>
                  <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link>
-                 <Link href="/ServicePage?service=events" className="block px-4 py-2">Events</Link>
+                 <Link href="/ServicePage?service=events" className="block px-4 py-2">Events.</Link>
                 </div>
               )}
             </div>
