@@ -15,26 +15,26 @@ export default function Navbar() {
     <nav style={{ backgroundColor: "#C3C3C3" }}>
            <div className="flex items-center justify-between px-4 py-3">
         <div className="flex items-center">
-         <a href='/'><Image src="/Logo.png" alt="Logo" width={50} height={50} /></a> 
+        <Link href='/'><Image src="/Logo.png" alt="Logo" width={50} height={50} /></Link> 
           <div className="hidden md:flex ml-10">
-            <a href="/Aboutus" className="text-white font-medium hover:text-grey mx-2">About Us</a>
+          <Link href="/Aboutus" className="text-white font-medium hover:text-grey mx-2">About Us</Link>
 
             <div className="relative group">
               <button className="text-white font-medium hover:text-grey mx-2 cursor-pointer" onClick={toggleDropdown}>Services</button>
               {dropdownOpen && (
                 <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white text-black py-2 z-20">
-                  <a href="/ServicePage?service=health-social-care" className="block px-4 py-2">Health and Social Care</a>
-                  <a href="/ServicePage?service=hr-recruitment" className="block px-4 py-2">HR Recruitment</a>
-                  <a href="/ServicePage?service=justice-prisons" className="block px-4 py-2">Justice and Prisons</a>
-                  <a href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</a>
-                  <a href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</a>
-                  <a href="/ServicePage?service=events" className="block px-4 py-2">Events</a>
+                 <Link href="/ServicePage?service=health-social-care" className="block px-4 py-2">Health and Social Care</Link>
+                 <Link href="/ServicePage?service=hr-recruitment" className="block px-4 py-2">HR Recruitment</Link>
+                 <Link href="/ServicePage?service=justice-prisons" className="block px-4 py-2">Justice and Prisons</Link>
+                 <Link href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</Link>
+                 <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link>
+                 <Link href="/ServicePage?service=events" className="block px-4 py-2">Events</Link>
                 </div>
               )}
             </div>
 
-            <a href="/Jobs" className="text-white font-medium hover:text-grey mx-2">Job/Vacancies</a>
-            <a href="/Contactus" className="text-white font-medium hover:text-grey mx-2">Contact Us</a>
+            <Link href="/Jobs" className="text-white font-medium hover:text-grey mx-2">Job/Vacancies</Link>
+            <Link href="/Contactus" className="text-white font-medium hover:text-grey mx-2">Contact Us</Link>
           </div>
         </div>
         <div className="md:hidden">
@@ -52,24 +52,24 @@ export default function Navbar() {
       {isOpen && (
         <div className="px-5 pb-3 md:hidden">
          
-            <a  href="/Aboutus" className="block text-white font-medium hover:text-grey mb-2">About Us</a>
+         <Link  href="/Aboutus" className="block text-white font-medium hover:text-grey mb-2">About Us</Link>
           
-            <a className="block text-white font-medium hover:text-grey mb-2 cursor-pointer" onClick={toggleDropdown}>Services</a>
+            <Link className="block text-white font-medium hover:text-grey mb-2 cursor-pointer" onClick={toggleDropdown}>Services</Link>
             {dropdownOpen && (
               <div className="bg-white text-black py-2">
-                <a href="/ServicePage?service=health-social-care" className="block px-4 py-2">Health and Social Care</a>
-                <a href="/ServicePage?service=hr-recruitment" className="block px-4 py-2">HR Recruitment</a>
-                <a href="/ServicePage?service=justice-prisons" className="block px-4 py-2">Justice and Prisons</a>
-                <a href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</a>
-                <a href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</a>
-                <a href="/ServicePage?service=events" className="block px-4 py-2">Events</a>
+               <Link href="/ServicePage?service=health-social-care" className="block px-4 py-2">Health and Social Care</Link>
+               <Link href="/ServicePage?service=hr-recruitment" className="block px-4 py-2">HR Recruitment</Link>
+               <Link href="/ServicePage?service=justice-prisons" className="block px-4 py-2">Justice and Prisons</Link>
+               <Link href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</Link>
+               <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link>
+               <Link href="/ServicePage?service=events" className="block px-4 py-2">Events</Link>
               </div>
             )}
                   
-            <a href="/Jobs" className="block text-white font-medium hover:text-grey mb-2">Job/Vacancies</a>
+                  <Link href="/Jobs" className="block text-white font-medium hover:text-grey mb-2">Job/Vacancies</Link>
          
          
-            <a href="/Contactus" className="block text-white font-medium hover:text-grey mb-2">Contact Us</a>
+                  <Link href="/Contactus" className="block text-white font-medium hover:text-grey mb-2">Contact Us</Link>
           
         </div>
       )}
