@@ -2,37 +2,34 @@ import { useState } from "react";
 import Image from 'next/image'
 import Link from 'next/link'
 
- const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [dropdownOpen, setDropdownOpen] = useState(false);
-  
-    const toggleDropdown = () => {
-      setDropdownOpen(!dropdownOpen);
-    };
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
 
   return (
     <nav style={{ backgroundColor: "#C3C3C3" }}>
-           <div className="flex items-center justify-between px-4 py-3">
+      <div className="flex items-center justify-between px-4 py-3">
         <div className="flex items-center">
         <Link href='/'><Image src="/Logo.png" alt="Logo" width={50} height={50} /></Link> 
-          <div className="hidden md:flex ml-10">
-          <Link href="/Aboutus" className="text-white font-medium hover:text-grey mx-2">About Us</Link>
-
+          <div className="hidden md:flex ml-10 text-lg md:text-xl">
+            <Link href="/Aboutus" className="text-white font-medium hover:text-grey mx-2">About Us</Link>
             <div className="relative group">
               <button className="text-white font-medium hover:text-grey mx-2 cursor-pointer" onClick={toggleDropdown}>Services</button>
               {dropdownOpen && (
                 <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white text-black py-2 z-20">
-                 <Link href="/ServicePage?service=health-social-care" className="block px-4 py-2">Health and Social Care</Link>
-                 <Link href="/ServicePage?service=hr-recruitment" className="block px-4 py-2">HR Recruitment</Link>
-                 <Link href="/ServicePage?service=justice-prisons" className="block px-4 py-2">Justice and Prisons</Link>
-                 <Link href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</Link>
-                 <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link>
-                 <Link href="/ServicePage?service=events" className="block px-4 py-2">Events.</Link>
+                  <Link href="/ServicePage?service=health-social-care" className="block px-4 py-2">Health and Social Care</Link>
+                  <Link href="/ServicePage?service=hr-recruitment" className="block px-4 py-2">HR Recruitment</Link>
+                  <Link href="/ServicePage?service=justice-prisons" className="block px-4 py-2">Justice and Prisons</Link>
+                  <Link href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</Link>
+                  <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link>
+                  <Link href="/ServicePage?service=events" className="block px-4 py-2">Events</Link>
                 </div>
               )}
             </div>
-
             <Link href="/Jobs" className="text-white font-medium hover:text-grey mx-2">Job/Vacancies</Link>
             <Link href="/Contactus" className="text-white font-medium hover:text-grey mx-2">Contact Us</Link>
           </div>
@@ -50,30 +47,25 @@ import Link from 'next/link'
         </div>
       </div>
       {isOpen && (
-        <div className="px-5 pb-3 md:hidden">
-         
-         <Link  href="/Aboutus" className="block text-white font-medium hover:text-grey mb-2">About Us</Link>
-          
-            <button className="block text-white font-medium hover:text-grey mb-2 cursor-pointer" onClick={toggleDropdown}>Services</button>
-            {dropdownOpen && (
-              <div className="bg-white text-black py-2">
-               <Link href="/ServicePage?service=health-social-care" className="block px-4 py-2">Health and Social Care</Link>
-               <Link href="/ServicePage?service=hr-recruitment" className="block px-4 py-2">HR Recruitment</Link>
-               <Link href="/ServicePage?service=justice-prisons" className="block px-4 py-2">Justice and Prisons</Link>
-               <Link href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</Link>
-               <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link>
-               <Link href="/ServicePage?service=events" className="block px-4 py-2">Events</Link>
-              </div>
-            )}
-                  
-                  <Link href="/Jobs" className="block text-white font-medium hover:text-grey mb-2">Job/Vacancies</Link>
-         
-         
-                  <Link href="/Contactus" className="block text-white font-medium hover:text-grey mb-2">Contact Us</Link>
-          
+        <div className="px-5 pb-3 md:hidden text-lg">
+          <Link href="/Aboutus" className="block text-white font-medium hover:text-grey mb-2">About Us</Link>
+          <button className="block text-white font-medium hover:text-grey mb-2 cursor-pointer" onClick={toggleDropdown}>Services</button>
+          {dropdownOpen && (
+            <div className="bg-white text-black py-2">
+              <Link href="/ServicePage?service=health-social-care" className="block px-4 py-2">Health and Social Care</Link>
+              <Link href="/ServicePage?service=hr-recruitment" className="block px-4 py-2">HR Recruitment</Link>
+              <Link href="/ServicePage?service=justice-prisons" className="block px-4 py-2">Justice and Prisons</Link>
+              <Link href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</Link>
+              <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link>
+              <Link href="/ServicePage?service=events" className="block px-4 py-2">Events</Link>
+            </div>
+          )}
+          <Link href="/Jobs" className="block text-white font-medium hover:text-grey mb-2">Job/Vacancies</Link>
+          <Link href="/Contactus" className="block text-white font-medium hover:text-grey mb-2">Contact Us</Link>
         </div>
       )}
     </nav>
   );
 }
+
 export default Navbar;

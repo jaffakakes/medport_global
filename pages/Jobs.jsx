@@ -3,6 +3,7 @@ import Header from './Component/Header';
 import { useRouter } from "next/router";
 import JobsBoard from "./Component/JobBoard";
 import Footer from "./Component/Footer";
+import styles from "@/utils/style";
 
 const headersDictionary = {
     '/Jobs': 'Jobs and Vacancies',
@@ -14,10 +15,24 @@ export default function Jobs(){
     const headerText = headersDictionary[currentPage]; // look up the text in your dictionary
     return(
         <>
-        <Navbar/>
+        <div className="bg-footerColor w-full overflow-hidden">
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Navbar/>
+        </div>
+      </div>
+      <div className={`bg-main ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
         <Header headerText={headerText}/>
+        </div>
+      </div>
+      <div className={`bg-white ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
         <JobsBoard/>
+        </div>
+      </div>
         <Footer/>
+        </div>
         </>
     );
 

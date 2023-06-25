@@ -16,9 +16,10 @@ const JobsBoard = () => {
     }, []);
   
     return (
+      
         <div className="max-w-5xl mx-auto mt-12 bg-white min-h-screen">
           {jobs.map((job) => (
-            <div key={job.id} className="mb-10 shadow-lg p-8 rounded">
+            <div key={job.id} className="mb-10  p-8 rounded">
               <h2 className="text-3xl font-bold mb-2 text-main">{job.JobTitle}</h2>
               <h3 className="text-xl font-semibold mb-2">{job.Company_Name}</h3>
               <p className="mb-4 text-gray-500">Location: {job.Location}</p>

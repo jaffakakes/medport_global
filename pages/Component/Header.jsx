@@ -5,17 +5,18 @@ const Header = ({ headerText }) => {
     const isMobile = isBrowser && window.innerWidth <= 768;
     
     const styles = {
-        display: 'flex',
-        alignItems: 'center', // This will align items vertically in the middle
-        justifyContent: 'flex-start', // This will align items to the left
-        height: isMobile ? '100vh' : '300px',
-        backgroundColor: '#D9D9D9',
-        color: 'white',
-        fontWeight: 'bold',
-        padding: '10px',
-        fontSize: '55px',
-        textAlign: isMobile ? 'center' : 'left',
-    };
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'flex-start',
+      height: isMobile ? '100vh' : '300px',
+      backgroundColor: '#D9D9D9',
+      color: 'white',
+      fontWeight: 'bold',
+      paddingLeft: '5rem',
+      paddingRight: '5rem',
+      fontSize: isMobile ?'35px':'55px',
+      textAlign: isMobile ? 'center' : 'left',
+  };
   
     return (
       <div style={styles}>
