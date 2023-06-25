@@ -26,7 +26,7 @@ const Navbar = () => {
                   <Link href="/ServicePage?service=justice-prisons" className="block px-4 py-2">Justice and Prisons</Link>
                   <Link href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</Link>
                   <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link>
-                  <Link href="/ServicePage?service=events" className="block px-4 py-2">Events</Link>
+                  <Link href="https://www.eventbrite.com/o/medport-global-67732812853" className="block px-4 py-2">Events</Link>
                 </div>
               )}
             </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
               <Link href="/ServicePage?service=justice-prisons" className="block px-4 py-2">Justice and Prisons</Link>
               <Link href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</Link>
               <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link>
-              <Link href="/ServicePage?service=events" className="block px-4 py-2">Events</Link>
+              <Link href="https://www.eventbrite.com/o/medport-global-67732812853" className="block px-4 py-2">Events</Link>
             </div>
           )}
           <Link href="/Jobs" className="block text-white font-medium hover:text-grey mb-2">Job/Vacancies</Link>
