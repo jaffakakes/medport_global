@@ -23,10 +23,10 @@ const Navbar = () => {
                 <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white text-black py-2 z-20">
                   <Link href="/ServicePage?service=health-social-care" className="block px-4 py-2">Health and Social Care</Link>
                   <Link href="/ServicePage?service=hr-recruitment" className="block px-4 py-2">HR Recruitment</Link>
-                  <Link href="/ServicePage?service=justice-prisons" className="block px-4 py-2">Justice and Prisons</Link>
+                  <Link href="/ServicePage?service=legal-advisory" className="block px-4 py-2">Legal and Advisory</Link>
                   <Link href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</Link>
-                  <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link>
-                  <Link href="https://www.eventbrite.com/o/medport-global-67732812853" className="block px-4 py-2">Events</Link>
+                  {/* <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link> */}
+                  <Link href="/Events" className="block px-4 py-2">Events</Link>
                 </div>
               )}
             </div>
@@ -54,10 +54,10 @@ const Navbar = () => {
             <div className="bg-white text-black py-2">
               <Link href="/ServicePage?service=health-social-care" className="block px-4 py-2">Health and Social Care</Link>
               <Link href="/ServicePage?service=hr-recruitment" className="block px-4 py-2">HR Recruitment</Link>
-              <Link href="/ServicePage?service=justice-prisons" className="block px-4 py-2">Justice and Prisons</Link>
+              <Link href="/ServicePage?service=legal-advisory" className="block px-4 py-2">Legal and Advisory</Link>
               <Link href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</Link>
-              <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link>
-              <Link href="https://www.eventbrite.com/o/medport-global-67732812853" className="block px-4 py-2">Events</Link>
+              {/* <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link> */}
+              <Link href="/Events" className="block px-4 py-2">Events</Link>
             </div>
           )}
           <Link href="/Jobs" className="block text-white font-medium hover:text-grey mb-2">Job/Vacancies</Link>

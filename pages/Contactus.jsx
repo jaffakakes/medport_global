@@ -3,6 +3,7 @@ import Header from './Component/Header';
 import { useRouter } from 'next/router';
 import Navbar from './Navbar';
 import Footer from './Component/Footer';
+import axios from 'axios';
 
 const headersDictionary = {
     '/Contactus': 'Contact Us',
@@ -32,8 +33,21 @@ export default function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
-    // Here, you would usually send the form data to your server
+  
+    // Send a POST request to your API
+    axios({
+      method: 'post',
+      url: '/api/contact',
+      data: formData
+    })
+    .then(response => {
+      // handle success
+      console.log(response);
+    })
+    .catch(error => {
+      // handle error
+      console.log(error);
+    });
   };
 
   return (
