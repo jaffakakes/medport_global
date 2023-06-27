@@ -11,7 +11,7 @@ const imageLinks = [
 const Links = [
   '/ServicePage?service=health-social-care',
   '/ServicePage?service=hr-recruitment',
-  '/ServicePage?service=justice-prisons',
+  '/ServicePage?service=legal-advisory',
   '/ServicePage?service=housing-partnership',
   '/Events'
 ];
