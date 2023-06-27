@@ -6,7 +6,7 @@ import styles from "@/utils/style";
 import EventsBoard from "./Component/EventsBoard";
 
 const headersDictionary = {
-    '/Events': 'Events',
+    '/Events': 'Events and Conferences',
    
   }; 
 export default function Jobs(){
