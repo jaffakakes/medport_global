@@ -39,9 +39,9 @@ const headersDictionary = {
         `Medport Global provides a complete range of legal advisory and consultancy services to businesses. With a team of skilled consultants, we focus on immediate action, problem-solving, and delivering tangible results. Moreover, our advisors are proficient in preparing clients for potential future uncertainties and assisting them in achieving their growth goals.`,
         `Medport Global's legal services cater to varied business needs, providing commercial advice and consultancy. We guide clients through complex legal aspects, ensuring sustainability. Our broad expertise includes assisting with entity governance, compliance, intellectual property, IT, commercial contracts, and dispute resolution. We also support global businesses in planning reorganizations, involving restructuring, mergers, acquisitions, and cross-border transactions, enabling businesses to navigate legal challenges confidently.`,
         `Through these comprehensive legal services, Medport Global becomes a catalyst for broader business transformation. We ensure alignment of legal considerations with strategic objectives, enabling our clients to navigate legal hurdles effectively and promote sustainable growth.`,
-        'https://firebasestorage.googleapis.com/v0/b/medport-global.appspot.com/o/prison%2FNew_prison_officer_apprenticeship.jpg?alt=media&token=c104fc85-f9e6-4841-afc6-5033e4479b45',
-        'https://firebasestorage.googleapis.com/v0/b/medport-global.appspot.com/o/prison%2FPrison_Officer.jpg?alt=media&token=cdf8d38f-993a-4bfb-b7ce-0b1a0ec05d60',
-        'https://firebasestorage.googleapis.com/v0/b/medport-global.appspot.com/o/prison%2Fprisons.jpg?alt=media&token=7f3894dc-79ed-429a-9cff-fa89beae98b4',
+        'https://firebasestorage.googleapis.com/v0/b/medport-global.appspot.com/o/prison%2Fcytonn-photography-GJao3ZTX9gU-unsplash.jpg?alt=media&token=8cec930d-a93b-42c7-9be8-2169be460b67',
+        'https://firebasestorage.googleapis.com/v0/b/medport-global.appspot.com/o/prison%2Fsebastian-pichler-bAQH53VquTc-unsplash.jpg?alt=media&token=6f1b31bd-d7f5-44b4-ba2d-822f4f7f0a61',
+        'https://firebasestorage.googleapis.com/v0/b/medport-global.appspot.com/o/prison%2Ftingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg?alt=media&token=b7766636-fef0-4fca-8d05-c1d96c00747c',
         'Comprehensive Legal Advisory Services',
         'Areas of Legal Expertise',
         'Legal Catalyst for Business Transformation'

@@ -57,7 +57,7 @@ const Navbar = () => {
               <Link href="/ServicePage?service=legal-advisory" className="block px-4 py-2">Legal and Advisory</Link>
               <Link href="/ServicePage?service=housing-partnership" className="block px-4 py-2">Housing and Partnership</Link>
               {/* <Link href="/ServicePage?service=consultancy" className="block px-4 py-2">Consultancy</Link> */}
-              <Link href="/Events" className="block px-4 py-2">Events</Link>
+              <Link href="/Events" className="block px-4 py-2">Events and Conferences</Link>
             </div>
           )}
           <Link href="/Jobs" className="block text-white font-medium hover:text-grey mb-2">Job/Vacancies</Link>
