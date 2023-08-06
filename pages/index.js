@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Hero from './Component/Hero';
 import Services from './Component/Services';
 import styles from '@/utils/style';
+import Footer from './Component/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,6 +28,11 @@ export default function Home() {
           <Services/>
         </div>
       </div>
+      <div className={`bg-main ${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`${styles.boxWidth}`}>
+    <Footer/>
+    </div>
+    </div>
     </div>
   );
 }

@@ -14,8 +14,8 @@ export default function ContactUs() {
     const router = useRouter();
     const currentPage = router.pathname; // get the current page
     const headerText = headersDictionary[currentPage]; // look up the text in your dictionary
-    console.log(headerText)
-    console.log(currentPage)
+    const [messageSent, setMessageSent] = useState(false);
+
   
   const [formData, setFormData] = useState({
     firstName: "",
@@ -43,7 +43,8 @@ export default function ContactUs() {
     .then(response => {
       // handle success
       console.log(response);
-    })
+      setMessageSent(true); // Set the messageSent state to true
+  })
     .catch(error => {
       // handle error
       console.log(error);
@@ -55,6 +56,12 @@ export default function ContactUs() {
     <Navbar/>
     <Header headerText={headerText}/>
     <div className="container mx-auto py-10 ">
+    {
+    messageSent && 
+    <div className="container mx-auto py-4 text-center bg-green-100 border border-green-400 text-green-700 px-4 rounded">
+        Message has been sent successfully!
+    </div>
+}
       <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="firstName">

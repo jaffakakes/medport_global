@@ -2,7 +2,7 @@ import aws from 'aws-sdk';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const { name, email, enquiry } = req.body;
+    const { firstName,lastName, email, enquiry } = req.body;
 
     aws.config.update({
       accessKeyId: process.env.AWS_ACCESS,
@@ -13,13 +13,13 @@ export default async function handler(req, res) {
     const ses = new aws.SES({ apiVersion: '2010-12-01' });
 
     const htmlBody =`
-    <p>From: ${name} (${email})</p>
+    <p>From: ${firstName} ${lastName} (${email})</p>
     <p>${enquiry}</p>
     `;
 
     const params = {
       Destination: {
-        ToAddresses: ['japhetdesouza6@gmail.com'], // recipient email
+        ToAddresses: ['tunde.adewopo@medportglobal.co.uk'], // recipient email
       },
       Message: {
         Body: {
