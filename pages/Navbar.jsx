@@ -30,7 +30,7 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <Link href="https://jobs.medportglobal.co.uk/" className="text-white font-medium hover:text-grey mx-2">Job/Vacancies</Link>
+            <Link href="https://Jobs.medportglobal.co.uk/" className="text-white font-medium hover:text-grey mx-2">Job/Vacancies</Link>
             <Link href="/Contactus" className="text-white font-medium hover:text-grey mx-2">Contact Us</Link>
           </div>
         </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
               <Link href="/Events" className="block px-4 py-2">Events and Conferences</Link>
             </div>
           )}
-          <Link href="https://jobs.medportglobal.co.uk/" className="block text-white font-medium hover:text-grey mb-2">Job/Vacancies</Link>
+          <Link href="https://Jobs.medportglobal.co.uk/" className="block text-white font-medium hover:text-grey mb-2">Job/Vacancies</Link>
           <Link href="/Contactus" className="block text-white font-medium hover:text-grey mb-2">Contact Us</Link>
         </div>
       )}
