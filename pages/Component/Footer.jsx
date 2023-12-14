@@ -6,7 +6,7 @@ const Footer = () => (
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-[1] flex flex-col justify-start ">
         <p className={`font-outfits font-medium text-white text-[18px] leading-[30.8px] mt-4 max-w-[312px]`}>
-        Info@medportglobal.co.uk<br/> 9-11 Gunnery Terrace,<br/> London SE18 6SW
+        Info@medportglobal.co.uk<br/>+441322681044<br/> 
         </p>
       </div>
 
